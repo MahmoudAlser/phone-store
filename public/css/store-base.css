@@ -1,0 +1,130 @@
+/* ===== PhoneStore - Base Styles (shared across all pages) ===== */
+
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    text-align: right;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Navbar ===== */
+.store-navbar {
+    background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 100%);
+    padding: 0.8rem 1.5rem;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.4);
+    z-index: 1050;
+}
+
+.store-navbar .navbar-brand {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: #fff !important;
+    letter-spacing: 1px;
+}
+
+.store-navbar .navbar-brand span { color: #e94560; }
+.store-navbar .navbar-brand i { color: #e94560; margin-left: 6px; }
+
+.store-navbar .nav-link {
+    color: rgba(255,255,255,0.85) !important;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem !important;
+    transition: color 0.3s;
+    position: relative;
+}
+
+.store-navbar .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0; right: 0;
+    width: 0; height: 2px;
+    background: #e94560;
+    transition: width 0.3s;
+}
+
+.store-navbar .nav-link:hover { color: #e94560 !important; }
+.store-navbar .nav-link:hover::after { width: 100%; }
+
+.nav-item.active .nav-link { color: #e94560 !important; }
+.nav-item.active .nav-link::after { width: 100%; }
+
+.btn-login {
+    border: 2px solid rgba(255,255,255,0.5);
+    color: #fff !important;
+    border-radius: 25px;
+    padding: 0.35rem 1.2rem !important;
+    font-size: 0.88rem;
+    transition: all 0.3s;
+    margin-right: 6px;
+}
+
+.btn-login:hover { background: rgba(255,255,255,0.15); border-color: #fff; }
+
+.btn-register {
+    background: #e94560;
+    color: #fff !important;
+    border-radius: 25px;
+    padding: 0.35rem 1.2rem !important;
+    font-size: 0.88rem;
+    border: 2px solid #e94560;
+    transition: all 0.3s;
+}
+
+.btn-register:hover { background: #c73652; border-color: #c73652; }
+
+.user-greeting {
+    color: rgba(255,255,255,0.8);
+    font-size: 0.9rem;
+    margin-left: 10px;
+}
+
+.user-greeting i { color: #e94560; margin-left: 4px; }
+
+/* ===== Page Header ===== */
+.page-header {
+    margin-top: 66px;
+    background: linear-gradient(135deg, #0f0f23 0%, #16213e 50%, #0f3460 100%);
+    padding: 50px 0 40px;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.page-header p {
+    color: rgba(255,255,255,0.7);
+    font-size: 1rem;
+    margin: 0;
+}
+
+.page-header .badge-count,
+.page-header .badge-label {
+    display: inline-block;
+    background: #e94560;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 4px 14px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+}
+
+/* ===== Footer ===== */
+.store-footer {
+    background: #0a0a1a;
+    color: rgba(255,255,255,0.6);
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.store-footer a { color: #e94560; text-decoration: none; }

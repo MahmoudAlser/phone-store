@@ -1,0 +1,72 @@
+/* ===== PhoneStore - Add Post Page ===== */
+
+.form-section { padding: 50px 0 60px; }
+
+.form-card {
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    overflow: hidden;
+}
+
+.form-card-header {
+    background: linear-gradient(135deg, #0f0f23, #1a1a3e);
+    padding: 20px 28px;
+    display: flex; align-items: center; gap: 12px;
+}
+
+.form-card-header i { color: #e94560; font-size: 1.4rem; }
+.form-card-header h4 { color: #fff; font-weight: 700; margin: 0; font-size: 1.1rem; }
+
+.form-card-body { padding: 32px 28px; }
+
+.form-group label {
+    font-weight: 700; color: #0f0f23;
+    font-size: 0.92rem; margin-bottom: 6px;
+}
+
+.form-group label i { color: #e94560; margin-left: 6px; }
+
+.form-control, .form-select {
+    border: 1.5px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 0.92rem; color: #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #e94560;
+    box-shadow: 0 0 0 3px rgba(233,69,96,0.12);
+    outline: none;
+}
+
+textarea.form-control { resize: vertical; min-height: 130px; }
+
+.btn-submit {
+    background: #e94560; color: #fff;
+    border: none; border-radius: 30px;
+    padding: 12px 40px; font-size: 1rem; font-weight: 700;
+    font-family: 'Cairo', sans-serif;
+    transition: all 0.3s;
+    box-shadow: 0 6px 20px rgba(233,69,96,0.35);
+}
+
+.btn-submit:hover {
+    background: #c73652;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(233,69,96,0.45);
+}
+
+.btn-cancel {
+    background: transparent; color: #888;
+    border: 1.5px solid #ddd; border-radius: 30px;
+    padding: 11px 30px; font-size: 0.95rem; font-weight: 600;
+    font-family: 'Cairo', sans-serif;
+    transition: all 0.3s; margin-right: 10px;
+    text-decoration: none; display: inline-block;
+}
+
+.btn-cancel:hover { border-color: #aaa; color: #555; text-decoration: none; }
