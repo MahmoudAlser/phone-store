@@ -21,8 +21,6 @@ Route::get('/logout', function () {
     return redirect('/');
 });
 
-Route::get('/posts',   [Cpost::class,'showpost'])->middleware(['auth'])->name('posts');
-
 require __DIR__.'/auth.php';
 
 Route::get('/posts', function () {

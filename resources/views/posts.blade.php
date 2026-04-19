@@ -30,7 +30,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarMain">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link" href="/"><i class="fas fa-home ml-1"></i>الرئيسية</a>
             </li>
@@ -46,7 +46,7 @@
             @endauth
         </ul>
 
-        <div class="d-flex align-items-center">
+        <div class="d-flex align-items-center mr-auto">
             @auth
                 <span class="user-greeting">
                     <i class="fas fa-user-circle"></i>{{ Auth::user()->name }}

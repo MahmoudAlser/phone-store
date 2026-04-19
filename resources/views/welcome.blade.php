@@ -25,11 +25,11 @@
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain"
             aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon  "></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarMain">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav">
             <li class="nav-item active">
                 <a class="nav-link" href="/"><i class="fas fa-home ml-1"></i>الرئيسية</a>
             </li>
@@ -45,7 +45,7 @@
             </li>
         </ul>
 
-        <div class="d-flex align-items-center">
+        <div class="d-flex align-items-center mr-auto">
             @auth
                 <span class="user-greeting">
                     <i class="fas fa-user-circle"></i>{{ Auth::user()->name }}
